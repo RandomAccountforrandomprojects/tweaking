@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('IMG_1819.jpg') no-repeat center center/cover;
+      font-family: Arial, sans-serif;
+    }
+    .content {
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    button {
+      background-color: #f39c12;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.5em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Happy Birthday Autumn the Sigma!!</h1>
+    <button onclick="playMusic()">CLICK FOR SIGMA SUPRISE!!</button>
+    <audio id="felizNavidad" src="happy-birthday-my-kitty-120918.mp3"></audio>
+  </div>
+
+  <script>
+    function playMusic() {
+      const audio = document.getElementById('felizNavidad');
+      audio.play();
+    }
+  </script>
+</body>
+</html>
